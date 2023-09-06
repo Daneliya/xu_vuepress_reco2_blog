@@ -1,0 +1,6 @@
+.vuepress/.cache
+.vuepress/.temp
+node_modules
+
+*.iml
+.idea/
