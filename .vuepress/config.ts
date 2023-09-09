@@ -18,17 +18,17 @@ export default defineUserConfig({
         series: {
             "/docs/theme-reco/": [
                 {
-                    text: "文档",
+                    text: "开发文档",
                     children: ["home", "theme"],
                 },
                 {
-                    text: "module two",
+                    text: "日常笔记",
                     children: ["api", "plugin"],
                 },
             ],
         },
         // 自动设置分类
-        autoSetBlogCategories: true,
+        // autoSetBlogCategories: true,
         // 自动将分类和标签添加至头部导航条
         // autoAddCategoryToNavbar: {
         //     location: 3, // 默认 0
@@ -37,15 +37,20 @@ export default defineUserConfig({
         // },
         navbar: [
             {text: "主页", link: "/", icon: 'Home'},
-            {text: "分类", link: "/categories/reco/1/", icon: 'Document'},
+            {
+                text: "分类", link: "/categories/reco/1/", icon: 'Document',
+                children: [
+                    {text: "RocketMQ", link: "/categories/RocketMQ/1/", icon: 'Document'},
+                ]
+            },
             {text: "标签", link: "/tags/tag1/1/", icon: 'SubVolume'},
             // {text: "时间轴", icon: 'SubVolume'},
             {
                 text: "随笔文档",
                 icon: 'Document',
                 children: [
-                    {text: "vuepress-reco", link: "/docs/theme-reco/theme"},
-                    {text: "vuepress-theme-reco", link: "/blogs/other/guide"},
+                    {text: "开发文档", link: "/docs/theme-reco/theme"},
+                    {text: "日常笔记", link: "/blogs/other/guide"},
                 ],
             },
         ],

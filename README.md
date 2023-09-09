@@ -9,7 +9,7 @@ bannerBrand:
   bgImage: '/bg.svg'
   title: 徐晓龙的博客
   description: 
-  tagline: 
+  tagline: 记录工作和学习过程中的笔记
   buttons:
     - { text: Guide, link: '/docs/guide/introduce' }
     - { text: Default Style, link: '/docs/style-default-api/introduce', type: 'plain' }
@@ -24,27 +24,3 @@ actionText: About
 actionLink: /views/other/about
 ---
 
-## 快速开始
-
-**npx**
-
-```bash
-# 初始化，并选择 2.x
-npx @vuepress-reco/theme-cli init
-```
-
-**npm**
-
-```bash
-# 初始化，并选择 2.x
-npm install @vuepress-reco/theme-cli@1.0.7 -g
-theme-cli init
-```
-
-**yarn**
-
-```bash
-# 初始化，并选择 2.x
-yarn global add @vuepress-reco/theme-cli@1.0.7
-theme-cli init
-```
